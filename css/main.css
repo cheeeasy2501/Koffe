@@ -1,0 +1,546 @@
+a,p,div,ul, ol, li, section, body, html, h1, h2,h3
+{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+a
+{
+    text-decoration: none;
+}
+button
+{
+    outline: none;
+    border: none;
+}
+body
+{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+
+}
+html
+{
+    scroll-behavior: smooth;
+}
+#app div
+{
+    transition: .3s ease-in;
+}
+
+.container
+{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+.grid-template
+{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-column-gap: 2%;
+    grid-row-gap: 32px;
+}
+header
+{
+  position: fixed;
+  background: transparent;
+  width: 100%;
+  transition: .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  background-color: rgb(255, 255, 255);
+  z-index: 10;
+}
+
+footer
+{
+        background: #efefef;
+}
+ main
+ {
+    
+    padding: 104px 0 0 0;
+
+ }
+.section-1
+{
+    background:url(/images/section.jpg);
+    opacity: 1;
+    background-attachment: fixed;
+}
+.header-container
+{
+    grid-column: 1/13;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0;
+    transition:  .3s ease-in;
+}
+.footer-container
+{
+    padding: 24px 0;
+}
+h1
+{
+    font-size: 28px;
+    line-height: 32px;
+}
+h2
+{
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: normal;
+}
+h3
+{
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: normal;
+}
+
+.logo-name
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;    
+}
+.for-logo
+{
+    margin-left: 8px;
+}
+nav
+{
+    display: flex;
+}
+.header-link
+{
+    padding: 16px 14px;
+    margin-left: 8px;
+    color: black;
+    transition: .3s ease-in;
+    border-radius: 4px;
+    transition: .3s ease-in;
+    display: flex;
+    align-items: center;
+    
+}
+.header-link:hover
+{
+    background: red;
+    color: white;
+}
+.header-link:first-of-type
+{
+    margin-left: 0;
+}
+.main-container
+{
+    padding: 72px 0;
+}
+.aboute-us-block
+{
+    grid-column: 1/8;
+    background: white;
+    padding: 14px 16px;
+    border-radius: 4px;
+}
+.aboute-us-slider-container
+{
+    grid-column: 8/13;
+    position: relative;
+}
+.owl-aboute-us
+{
+    grid-column: 8/13;
+}
+.confectionery-block-title
+{
+    color: black;
+}
+.aboute-us-title,.confectionery-block-title,.gallery-title,.contact-title
+{
+    position: relative;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+.confectionery-title
+{
+    position: relative;
+    font-size: 21px;
+    padding: 12px;
+    background: #eae7e7;
+    color: #2d2d2d;
+    cursor: pointer;
+    box-shadow: 0px 0px 1px 0px black;
+    transition: .3s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+.confectionery-title:hover
+{
+    background: #504dffeb;
+    color: white;
+}
+.aboute-us-title::before, .confectionery-block-title::before,.gallery-title::before,.contact-title::before
+{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: #ff5268;
+    bottom: -4px;
+    
+}
+.aboute-us-text, .confectionery-text,.gallery-text,.contact-text
+{
+    font-size: 19px;
+    line-height: 28px;
+}
+.aboute-us-slider-container
+{
+    background: #ffffff5e;
+    padding: 4px;
+    border-radius: 4px;
+}
+.owl-stage-outer
+{
+    display: flex;
+    height: 100%;
+}
+.aboute-us-slide img, .aboute-us-slide
+{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    cursor: pointer;
+}
+.owl-aboute-us , .owl-stage
+{
+    display: flex;
+    height: 100%;
+}
+.fancybox-content img
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.owl-dots
+{
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+    background-color: #000000a8;
+    padding: 16px 0px;
+}
+.section-2 
+{
+    display: block;
+}
+    .confectionery-block
+{
+    grid-column: 7/13;
+    color: white;
+    border-radius: 4px;
+}
+.confectionery-img
+{
+    background: #ff5268;
+    padding: 4px;
+    border-radius: 4px;
+    grid-column: 1/7;
+    grid-row: 1/2;
+}
+.confectionery-img img
+{
+    display: flex;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.confectionery-text
+{
+    display: none;
+    color: black;
+    padding: 16px 8px;
+}
+.active
+{
+    display: flex;
+    background: #ff5268;
+    color: white;
+}
+.owl-dots .active span
+{
+    background-color: #ff5268!important;
+    border-radius: 50%;
+}
+.gallery-block
+{
+    grid-column: 1/13;
+}
+.our-gallery-block
+{
+    grid-column: 1/11;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 16px;
+    min-height: 50vh;
+    grid-row: 2/4;
+}
+
+.gallery-image img
+{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}  
+
+.button-block
+{
+    grid-column: 11/13;
+    display: flex;
+    flex-direction: column;
+    background: #ffffffdb;
+    padding: 16px;
+    border-radius: 4px;
+}
+.checkbox
+{
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    background: #ff5268;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    color: white;
+    font-weight: bold;
+    transition: .3s ease-in;
+    cursor: pointer;
+}
+
+.checkbox:hover
+{
+    transform: scale(1.05);
+    background: red;
+}
+  .jpg
+  {
+      border: solid 3px red;
+  }
+  .png
+  {
+      border: solid 3px blue;
+  }
+  .other
+  {
+    border: dashed 3px pink;
+  }
+  .fade-enter-active, .fade-leave-active {
+    transition: opacity  .5s ease-in;
+    transition: transform .3s ease-in;
+  }
+  .fade-enter, .fade-leave-to  {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+.deactive
+{
+    background: #a9a9a9;
+}
+.gallery-image
+{
+    transition: .3s ease-in;
+    height: 200px;
+    cursor: pointer;
+}
+ .gallery-image:hover
+ {
+   transform:scale(1.05);
+ } 
+ .section-gallery
+ {
+     background: url(/images/gallery.jpg);
+     background-attachment: fixed;
+ }
+ .gallery-title,.gallery-text{
+     color: white;
+ }
+ .contact-block
+ {
+     grid-column: 8/13;
+     padding: 16px;
+     background: #eaeaea;
+     border-radius: 4px;
+ }
+ .social-block
+ {
+     display: flex;
+     flex-direction: column;
+ }
+ .social-block svg
+ {
+     display: flex;
+     width: 28px;
+     height: 28px;
+     margin-right: 16px;
+ }
+ .telephone, .adress,.vkontakte,.instagram,.hashtag
+ {
+     display: flex;
+     align-items: center;
+     margin-bottom: 12px;
+     padding: 4px 8px;
+     color: black;
+     transition: .2s ease-in;
+     border-radius: 4px;
+
+ }
+ .telephone:hover, .vkontakte:hover,.instagram:hover
+ {
+     opacity: 0.8;
+     background: black ;
+     color: white;
+ }
+ .telephone svg path
+ {
+     fill:#1dd01d;
+ }
+ .vkontakte svg path
+ {
+     fill: #2f2ff1;
+ }
+ .map
+ {
+     grid-column: 1/8;
+     grid-row: 1/2;
+ }
+ .info
+ {
+     display: flex;
+     justify-content: space-between;
+     font-size: 14px;
+ }
+ .my-info
+ {
+     font-weight: bold;
+ }
+ .color
+ {
+     color: green;
+     font-weight: bold;
+ }
+@media (max-width:1250px)
+{
+    .aboute-us-block
+    {
+        grid-column: 1/7;
+    
+    }
+    .aboute-us-slider-container
+    {
+        grid-column: 7/13;
+    }
+    .aboute-us-text, .confectionery-text,.gallery-text,.contact-text
+    {
+        font-size: 18px;
+        line-height: 24px;
+    }
+   
+}
+@media (max-width:1200px)
+{   
+    .gallery-block
+    {
+        margin-bottom: 16px;
+    }
+    header
+    {
+        background: white!important;
+    }
+    .header-link
+    {
+        padding: 8px;
+       
+    }
+    h2
+    {
+        font-size: 18px;
+    }
+    h3
+    {
+        font-size: 16px;
+    }
+    nav
+    {
+        margin-top: 16px;
+    }
+    .logo-name
+    {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    .header-container
+    {
+        display: flex;
+        flex-direction: column;
+        padding: 24px 0!important;
+    }
+    .container
+    {
+        padding: 0 16px;
+    }
+    .main-container
+    {
+        padding: 32px 0;
+    }
+    .owl-stage-outer
+    {
+        max-height: 320px;
+    }
+    .confectionery-img
+    {
+        margin-top: 16px;
+    }
+    .confectionery-img img
+    {
+        max-height: 350px;
+    }
+    .aboute-us-slider-container
+    {
+        margin-top: 16px;
+    }
+ 
+    h1
+    {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    h2
+    {
+        font-size: 21px;
+        line-height: 24px;
+    }
+    h3
+    {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .grid-template
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+
