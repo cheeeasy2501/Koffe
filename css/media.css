@@ -1,0 +1,90 @@
+@media (max-width:1250px) {
+    .aboute-us-block {
+        grid-column: 1/7;
+    }
+    .aboute-us-slider-container {
+        grid-column: 7/13;
+    }
+    .aboute-us-text,
+    .confectionery-text,
+    .gallery-text,
+    .contact-text {
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width:1200px) {
+    .gallery-block {
+        margin-bottom: 16px;
+    }
+    header {
+        background: white!important;
+    }
+    .header-link {
+        padding: 8px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    nav {
+        margin-top: 16px;
+    }
+    .logo-name {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        flex-direction: row;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+    }
+    .header-container {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+        padding: 24px 0!important;
+    }
+    .container {
+        padding: 0 16px;
+    }
+    .main-container {
+        padding: 32px 0;
+    }
+    .owl-stage-outer {
+        max-height: 320px;
+    }
+    .confectionery-img {
+        margin-top: 16px;
+    }
+    .confectionery-img img {
+        max-height: 350px;
+    }
+    .aboute-us-slider-container {
+        margin-top: 16px;
+    }
+    h1 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    h2 {
+        font-size: 21px;
+        line-height: 24px;
+    }
+    h3 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .grid-template {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+    }
+}
