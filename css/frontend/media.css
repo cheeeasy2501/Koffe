@@ -24,12 +24,6 @@
     .header-link {
         padding: 8px;
     }
-    h2 {
-        font-size: 18px;
-    }
-    h3 {
-        font-size: 16px;
-    }
     nav {
         margin-top: 16px;
     }
@@ -48,13 +42,10 @@
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         flex-direction: column;
-        padding: 24px 0!important;
+        padding: 24px 0;
     }
     .container {
         padding: 0 16px;
-    }
-    .main-container {
-        padding: 32px 0;
     }
     .owl-stage-outer {
         max-height: 320px;
@@ -86,5 +77,62 @@
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         flex-direction: column;
+    }
+}
+
+@media (max-width:1024px) {
+    h2 {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: normal;
+    }
+    .header-link {
+        padding: 8px 12px;
+    }
+    .main-container {
+        padding: 48px 0;
+    }
+}
+
+@media (max-width:768px) {
+    .main-container {
+        padding: 32px 0;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    main {
+        padding: 140px 0 0 0;
+    }
+    .aboute-us-title,
+    .confectionery-block-title,
+    .gallery-title,
+    .contact-title {
+        font-size: 21px;
+    }
+    .aboute-us-text,
+    .confectionery-text,
+    .gallery-text,
+    .contact-text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .owl-stage-outer {
+        max-height: 250px;
+    }
+    .confectionery-title {
+        font-size: 16px;
+    }
+    .our-gallery-block {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .button-block {
+        margin: 16px 0;
+    }
+    .map {
+        display: none;
     }
 }
