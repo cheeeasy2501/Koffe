@@ -1,15 +1,4 @@
-a,
-p,
-div,
-ul,
-ol,
-li,
-section,
-body,
-html,
-h1,
-h2,
-h3 {
+a, p, div, ul, ol, li, section, body, html, h1, h2, h3 {
     padding: 0;
     margin: 0;
     list-style: none;
@@ -134,6 +123,51 @@ nav {
     display: flex;
 }
 
+#top-mobile-menu {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    background: #f7f7f7;
+    flex-direction: column;
+    right: 0;
+    height: 100vh;
+    top: 0;
+    margin: 0;
+    justify-content: space-between;
+    transition: .3s ease-in;
+    opacity: 0;
+    transform: translateX(105%);
+}
+
+#top-mobile-menu .social-block {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    background:#eaeaea;
+}
+
+#top-mobile-menu .social-block svg {
+    margin-right: 0;
+}
+
+#top-mobile-menu .social-block .telephone, #top-mobile-menu .social-block .adress, #top-mobile-menu .social-block .vkontakte, #top-mobile-menu .social-block .instagram {
+    margin-bottom: 0;
+}
+
+.background {
+    background: #0000008f;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: .3s ease-in;
+    display: none;
+    opacity: 0;
+}
+
 .header-link {
     padding: 16px 14px;
     margin-left: 8px;
@@ -181,10 +215,7 @@ nav {
     color: black;
 }
 
-.aboute-us-title,
-.confectionery-block-title,
-.gallery-title,
-.contact-title {
+.aboute-us-title, .confectionery-block-title, .gallery-title, .contact-title {
     position: relative;
     font-size: 26px;
     font-weight: bold;
@@ -208,10 +239,7 @@ nav {
     color: white;
 }
 
-.aboute-us-title::before,
-.confectionery-block-title::before,
-.gallery-title::before,
-.contact-title::before {
+.aboute-us-title::before, .confectionery-block-title::before, .gallery-title::before, .contact-title::before {
     content: '';
     position: absolute;
     display: block;
@@ -221,10 +249,7 @@ nav {
     bottom: -4px;
 }
 
-.aboute-us-text,
-.confectionery-text,
-.gallery-text,
-.contact-text {
+.aboute-us-text, .confectionery-text, .gallery-text, .contact-text {
     font-size: 19px;
     line-height: 28px;
 }
@@ -241,8 +266,7 @@ nav {
     height: 100%;
 }
 
-.aboute-us-slide img,
-.aboute-us-slide {
+.aboute-us-slide img, .aboute-us-slide {
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
@@ -250,8 +274,7 @@ nav {
     cursor: pointer;
 }
 
-.owl-aboute-us,
-.owl-stage {
+.owl-aboute-us, .owl-stage {
     display: -webkit-box;
     display: flex;
     height: 100%;
@@ -387,8 +410,7 @@ nav {
     border: dashed 3px pink;
 }
 
-.fade-enter-active,
-.fade-leave-active {
+.fade-enter-active, .fade-leave-active {
     -webkit-transition: opacity .5s ease-in;
     transition: opacity .5s ease-in;
     -webkit-transition: -webkit-transform .3s ease-in;
@@ -397,8 +419,7 @@ nav {
     transition: transform .3s ease-in, -webkit-transform .3s ease-in;
 }
 
-.fade-enter,
-.fade-leave-to {
+.fade-enter, .fade-leave-to {
     opacity: 0;
     -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
@@ -425,8 +446,7 @@ nav {
     background-attachment: fixed;
 }
 
-.gallery-title,
-.gallery-text {
+.gallery-title, .gallery-text {
     color: white;
 }
 
@@ -453,11 +473,7 @@ nav {
     margin-right: 16px;
 }
 
-.telephone,
-.adress,
-.vkontakte,
-.instagram,
-.hashtag {
+.telephone, .adress, .vkontakte, .instagram, .hashtag {
     display: -webkit-box;
     display: flex;
     -webkit-box-align: center;
@@ -470,9 +486,7 @@ nav {
     border-radius: 4px;
 }
 
-.telephone:hover,
-.vkontakte:hover,
-.instagram:hover {
+.telephone:hover, .vkontakte:hover, .instagram:hover {
     opacity: 0.8;
     background: black;
     color: white;
@@ -506,4 +520,34 @@ nav {
 .color {
     color: green;
     font-weight: bold;
+}
+.fixed-icon-menu
+{
+    height: 28px;
+    width: 28px;
+    position: fixed;
+    z-index: 9;
+    bottom: 14px;
+    right: 16px;
+    background: #444442;
+    padding: 12px;
+    border-radius: 4px; 
+    animation:hoverWave linear 1.5s infinite;
+    animation-iteration-count:3;
+    display:none;
+}
+
+@-webkit-keyframes hoverWave {
+    0% {
+        box-shadow:0 8px 10px rgba(76, 77, 78, 0.3),0 0 0 0 rgba(56,163,253,0.2),0 0 0 0 rgba(56,163,253,0.2)
+    }
+    30% {
+        box-shadow:0 8px 10px rgba(56,163,253,0.3),0 0 0 15px rgba(56,163,253,0.2),0 0 0 0 rgba(56,163,253,0.2)
+    }
+    70% {
+        box-shadow:0 8px 10px rgba(56,163,253,0.3),0 0 0 30px rgba(56,163,253,0),0 0 0 26.7px rgba(56,163,253,0.067)
+    }
+    100% {
+        box-shadow:0 8px 10px rgba(56,163,253,0.3),0 0 0 30px rgba(56,163,253,0),0 0 0 40px rgba(56,163,253,0.0)
+    }
 }

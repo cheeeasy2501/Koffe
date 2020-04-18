@@ -5,10 +5,7 @@
     .aboute-us-slider-container {
         grid-column: 7/13;
     }
-    .aboute-us-text,
-    .confectionery-text,
-    .gallery-text,
-    .contact-text {
+    .aboute-us-text, .confectionery-text, .gallery-text, .contact-text {
         font-size: 18px;
         line-height: 24px;
     }
@@ -95,28 +92,35 @@
 }
 
 @media (max-width:768px) {
-    .main-container {
-        padding: 32px 0;
+    nav
+    {
+        margin-top: 8px;
     }
-    h2 {
-        font-size: 18px;
+    .header-container
+    {
+        padding: 16px 0;
+    }
+    .logo-name
+    {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .social-block {
+        font-size: 14px;
+    }
+    .main-container {
+        padding: 16px 0;
     }
     h3 {
-        font-size: 16px;
+        font-size: 14px;
     }
     main {
         padding: 140px 0 0 0;
     }
-    .aboute-us-title,
-    .confectionery-block-title,
-    .gallery-title,
-    .contact-title {
+    .aboute-us-title, .confectionery-block-title, .gallery-title, .contact-title {
         font-size: 21px;
     }
-    .aboute-us-text,
-    .confectionery-text,
-    .gallery-text,
-    .contact-text {
+    .aboute-us-text, .confectionery-text, .gallery-text, .contact-text {
         font-size: 14px;
         line-height: 20px;
     }
@@ -134,5 +138,32 @@
     }
     .map {
         display: none;
+    }
+}
+
+@media (max-width:600px) {
+    .fixed-icon-menu {
+        display: block;
+    }
+    main {
+        padding: 96px 0 0 0;
+    }
+    #top-menu {
+        display: none;
+    }
+    .header-link {
+        border-radius: 0;
+        margin: 0;
+    }
+}
+@media (max-width:400px)
+{
+    .our-gallery-block
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .gallery-image
+    {
+        height: 150px;
     }
 }
